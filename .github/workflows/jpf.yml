@@ -30,7 +30,7 @@ jobs:
     - name: Compile Java sources
       run: |
         mkdir -p ./build
-        find ./ -name "*.java" | xargs javac -d./build -cp /tmp/jpf-core/build/jpf-classes.jar --enable-preview --release ${{ matrix.java }}
+        find ./ -name "*.java" | xargs javac -d ./build -cp /tmp/jpf-core/build/jpf-classes.jar --enable-preview --release ${{ matrix.java }}
 
     - name: Generate and Run JPF Configs
       run: |
